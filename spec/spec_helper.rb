@@ -51,4 +51,9 @@ Spec::Runner.configure do |config|
   # == Notes
   #
   # For more information take a look at Spec::Runner::Configuration and Spec::Runner
+  #
+  # karlyn: added Webrat.configure to enable visit method in spec/integration/layout_links_spec.rb
+  Webrat.configure do |config|
+    config.mode = :rails
+  end
 end

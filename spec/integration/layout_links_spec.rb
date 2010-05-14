@@ -29,8 +29,7 @@ describe "Layout links" do
   end
 
   it "should have the right links on the layout" do
-    # visit root_path
-    visit '/'
+    visit root_path
     click_link "About"
     response.should render_template('pages/about')
     click_link "Help"
